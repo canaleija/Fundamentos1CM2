@@ -18,6 +18,9 @@ int main(int argc, char** argv) {
     }
     else {
       printf("Son diferentes");
+      // Holaaaaa
+      
+      printf("Son diferentes");
     }
      // github / classroom 
     return (EXIT_SUCCESS);
