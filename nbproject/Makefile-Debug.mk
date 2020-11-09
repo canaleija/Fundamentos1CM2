@@ -37,7 +37,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/if.o \
 	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/newmain1.o
+	${OBJECTDIR}/newmain1.o \
+	${OBJECTDIR}/while.o
 
 
 # C Compiler Flags
@@ -78,6 +79,11 @@ ${OBJECTDIR}/newmain1.o: newmain1.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/newmain1.o newmain1.c
+
+${OBJECTDIR}/while.o: while.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/while.o while.c
 
 # Subprojects
 .build-subprojects:

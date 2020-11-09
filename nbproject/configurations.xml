@@ -15,6 +15,7 @@
       <itemPath>if.c</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>newmain1.c</itemPath>
+      <itemPath>while.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -44,6 +45,8 @@
       </item>
       <item path="newmain1.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="while.c" ex="false" tool="0" flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -65,9 +68,7 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="if.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="newmain1.c" ex="false" tool="0" flavor2="0">
+      <item path="while.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>
