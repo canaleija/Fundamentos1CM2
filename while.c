@@ -19,14 +19,22 @@
  */
 int main(int argc, char** argv) {
 
-    int x  = 0;
+    int x  = 1;
     // 0,1,2,3,4,5
-    while(x<5){
-        printf("Hola\n");
-        x = x + 1;
-    }
-    printf("%d",x);
+    int t = 1;
+    int tope = 10;
     
+    while(x<=tope){
+        printf("%d X %d = %d\n",t,x,t*x);
+        x = x + 1;
+       
+    }
+    
+    
+  
+   
+    // tarea hacer varias tablas
+    //con while pero anidado
        
     return (EXIT_SUCCESS);
 }

@@ -12,6 +12,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>fibonacci.c</itemPath>
       <itemPath>if.c</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>newmain1.c</itemPath>
@@ -39,6 +40,8 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="fibonacci.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="if.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
