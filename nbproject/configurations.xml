@@ -12,6 +12,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>arreglossimples.c</itemPath>
       <itemPath>fibonacci.c</itemPath>
       <itemPath>if.c</itemPath>
       <itemPath>main.c</itemPath>
@@ -41,6 +42,8 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="arreglossimples.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="fibonacci.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="if.c" ex="false" tool="0" flavor2="0">
@@ -74,7 +77,7 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="tablaswhile.c" ex="false" tool="0" flavor2="0">
+      <item path="arreglossimples.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>

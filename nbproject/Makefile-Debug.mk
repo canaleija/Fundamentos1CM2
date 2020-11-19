@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/arreglossimples.o \
 	${OBJECTDIR}/fibonacci.o \
 	${OBJECTDIR}/if.o \
 	${OBJECTDIR}/main.o \
@@ -66,6 +67,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos1cm2.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos1cm2 ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/arreglossimples.o: arreglossimples.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arreglossimples.o arreglossimples.c
 
 ${OBJECTDIR}/fibonacci.o: fibonacci.c
 	${MKDIR} -p ${OBJECTDIR}

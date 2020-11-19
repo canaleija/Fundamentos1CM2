@@ -35,7 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/tablaswhile.o
+	${OBJECTDIR}/arreglossimples.o
 
 
 # C Compiler Flags
@@ -62,10 +62,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos1cm2.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos1cm2 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/tablaswhile.o: tablaswhile.c
+${OBJECTDIR}/arreglossimples.o: arreglossimples.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tablaswhile.o tablaswhile.c
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arreglossimples.o arreglossimples.c
 
 # Subprojects
 .build-subprojects:
