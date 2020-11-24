@@ -19,22 +19,39 @@
  */
 int main(int argc, char** argv) {
 
-    // definirlo 
-    int arreglo[5];
-    int x = 4;
-        
-    arreglo[0] = 2;
-    arreglo[1] = 5;
-    arreglo[2] = 11;
-    arreglo[3] = 67;
-    arreglo[4] = -4;
+
+    int x = 0;
+    int n;
+    // & = dirección de memoria
+    printf("Ingrese el valor de n: ");
+    scanf("%d",&n);
     
-    
-   
-   
-    for (x;x>=0;x=x-1){
-        printf("%d\n",arreglo[x]);    
+        // definirlo 
+    float arreglo[n];
+    // almacenamos de manera iterativa dentro del arreglo
+    for(x; x<n; x++){
+         printf("Ingrese el nuevo valor : ");
+         scanf("%f",&arreglo[x]);
     }
+    // iniciamos x en 0 para volver a iterar con x
+    x = 0;
+    float min = arreglo[0];
+    float max = arreglo[0];
+    for(x; x<n; x++){
+        if (arreglo[x]<min){
+            min = arreglo[x];
+        }
+        if(arreglo[x]>max){
+            max = arreglo[x];
+        }
+    
+    }
+    
+    printf("\nel valor minimo es: %f",min);
+    printf("\nel valor maximo es: %f",max);
+    
+    
+    
    
     
     return (EXIT_SUCCESS);
