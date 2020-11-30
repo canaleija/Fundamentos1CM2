@@ -40,6 +40,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/if.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/newmain1.o \
+	${OBJECTDIR}/recursosmath.o \
 	${OBJECTDIR}/tablaswhile.o \
 	${OBJECTDIR}/while.o
 
@@ -92,6 +93,11 @@ ${OBJECTDIR}/newmain1.o: newmain1.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/newmain1.o newmain1.c
+
+${OBJECTDIR}/recursosmath.o: recursosmath.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/recursosmath.o recursosmath.c
 
 ${OBJECTDIR}/tablaswhile.o: tablaswhile.c
 	${MKDIR} -p ${OBJECTDIR}
