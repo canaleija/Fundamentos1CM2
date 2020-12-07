@@ -12,10 +12,12 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Funciones.c</itemPath>
       <itemPath>arreglossimples.c</itemPath>
       <itemPath>fibonacci.c</itemPath>
       <itemPath>if.c</itemPath>
       <itemPath>main.c</itemPath>
+      <itemPath>menu.c</itemPath>
       <itemPath>newmain1.c</itemPath>
       <itemPath>recursosmath.c</itemPath>
       <itemPath>tablaswhile.c</itemPath>
@@ -43,6 +45,8 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="Funciones.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="arreglossimples.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="fibonacci.c" ex="false" tool="0" flavor2="0">
@@ -50,6 +54,8 @@
       <item path="if.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="menu.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="newmain1.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -80,7 +86,7 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="recursosmath.c" ex="false" tool="0" flavor2="0">
+      <item path="menu.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>

@@ -35,10 +35,12 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Funciones.o \
 	${OBJECTDIR}/arreglossimples.o \
 	${OBJECTDIR}/fibonacci.o \
 	${OBJECTDIR}/if.o \
 	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/menu.o \
 	${OBJECTDIR}/newmain1.o \
 	${OBJECTDIR}/recursosmath.o \
 	${OBJECTDIR}/tablaswhile.o \
@@ -69,6 +71,11 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos1cm2.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos1cm2 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/Funciones.o: Funciones.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Funciones.o Funciones.c
+
 ${OBJECTDIR}/arreglossimples.o: arreglossimples.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -88,6 +95,11 @@ ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
+
+${OBJECTDIR}/menu.o: menu.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/menu.o menu.c
 
 ${OBJECTDIR}/newmain1.o: newmain1.c
 	${MKDIR} -p ${OBJECTDIR}
