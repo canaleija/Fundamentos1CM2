@@ -36,6 +36,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/Funciones.o \
+	${OBJECTDIR}/apuntadores.o \
+	${OBJECTDIR}/apuntadores2.o \
 	${OBJECTDIR}/arreglossimples.o \
 	${OBJECTDIR}/fibonacci.o \
 	${OBJECTDIR}/if.o \
@@ -75,6 +77,16 @@ ${OBJECTDIR}/Funciones.o: Funciones.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Funciones.o Funciones.c
+
+${OBJECTDIR}/apuntadores.o: apuntadores.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/apuntadores.o apuntadores.c
+
+${OBJECTDIR}/apuntadores2.o: apuntadores2.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/apuntadores2.o apuntadores2.c
 
 ${OBJECTDIR}/arreglossimples.o: arreglossimples.c
 	${MKDIR} -p ${OBJECTDIR}

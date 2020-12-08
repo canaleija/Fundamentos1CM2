@@ -13,6 +13,8 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>Funciones.c</itemPath>
+      <itemPath>apuntadores.c</itemPath>
+      <itemPath>apuntadores2.c</itemPath>
       <itemPath>arreglossimples.c</itemPath>
       <itemPath>fibonacci.c</itemPath>
       <itemPath>if.c</itemPath>
@@ -46,6 +48,10 @@
       <compileType>
       </compileType>
       <item path="Funciones.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="apuntadores.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="apuntadores2.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="arreglossimples.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -86,7 +92,7 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="menu.c" ex="false" tool="0" flavor2="0">
+      <item path="apuntadores2.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>
